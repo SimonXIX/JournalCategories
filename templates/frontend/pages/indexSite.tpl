@@ -32,7 +32,7 @@
                                         <h3 id="active_journals">
                                                 Active Journals
                                         </h3>
-                                        <div id="see_more"> See <a href="#archived_journals">Archived Journals</a></div>
+                                        <div id="see_more"> See also <a href="#archived_journals">Archived Journals</a></div>
                                 </div>
                                 {foreach from=$journals item=journal}
                                     {if $journal->getId() == 1 || $journal->getId() == 2 || $journal->getId() == 4 || $journal->getId() == 11 || $journal->getId() == 6 || $journal->getId() == 17 || $journal->getId() == 16 || $journal->getId() == 5 || $journal->getId() == 9 || $journal->getId() == 13 || $journal->getId() == 15}
@@ -79,7 +79,7 @@
                                         <h3 id="archived_journals">
                                                 Archived Journals
                                         </h3>
-                                        <div id="see_more"> See <a href="#active_journals">Active Journals</a></div>
+                                        <div id="see_more"> See also <a href="#active_journals">Active Journals</a></div>
                                 </div>
                                 {foreach from=$journals item=journal}
                                     {if $journal->getId() == 12 || $journal->getId() == 14 || $journal->getId() == 7 || $journal->getId() == 8 || $journal->getId() == 18 || $journal->getId() == 10}
