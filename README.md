@@ -54,14 +54,14 @@ private function getJournalCategories() {
 ## File Structure
 
 ```
-journalCategories/
+JournalCategories/
 ├── JournalCategoriesPlugin.php         # Main plugin class
 ├── version.xml                         # Plugin version info
 ├── styles/
-│   ├── journal_category.css            # Compiled CSS (loaded by default)
+│   └── journal_category.css            # Compiled CSS (loaded by default)
 ├── templates/
 │   └── indexSite.tpl                   # Custom homepage template
-├── README.md                           # This file
+└── README.md                           # This file
 ```
 
 ## License
