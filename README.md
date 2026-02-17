@@ -8,13 +8,9 @@ This plugin, designed and configured for Edinburgh Diamond, organises journals o
 - Support for multiple categories with descriptions
 - Displays uncategorized journals in an "Other Journals" section
 
----
-
 ## Requirements
 
 - **OJS version:** 3.4.x (tested on 3.4.0-7)
-
----
 
 ## Installation
 
@@ -30,8 +26,6 @@ This plugin, designed and configured for Edinburgh Diamond, organises journals o
 4. Find "Journal Categories" in the list
 
 5. Click the checkbox to enable the plugin
-
----
 
 ## Configuration
 
@@ -57,8 +51,6 @@ private function getJournalCategories() {
 }
 ```
 
----
-
 ## File Structure
 
 ```
@@ -66,13 +58,11 @@ journalCategories/
 ├── JournalCategoriesPlugin.php         # Main plugin class
 ├── version.xml                         # Plugin version info
 ├── styles/
-│   ├── journal_category.css                  # Compiled CSS (loaded by default)
+│   ├── journal_category.css            # Compiled CSS (loaded by default)
 ├── templates/
 │   └── indexSite.tpl                   # Custom homepage template
 ├── README.md                           # This file
 ```
-
----
 
 ## License
 
