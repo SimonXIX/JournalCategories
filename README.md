@@ -29,40 +29,39 @@ This plugin, designed and configured for Edinburgh Diamond, organises journals o
 
 ## Configuration
 
-Journal categories are currently configured using journal IDs hardcoded in JournalCategoriesPlugin.php. This is less than ideal.
+Journal categories are configured through the OJS admin interface — no code editing required.
 
-Edit `JournalCategoriesPlugin.php` and modify the `getJournalCategories()` method:
+1. Log in as an administrator
 
-```php
-private function getJournalCategories() {
-    $categories = [
-        'Science & Technology' => [
-            'journal_ids' => [1, 2, 3],  // Replace with your journal IDs
-            'description' => 'Journals focused on scientific research and technology'
-        ],
-        'Social Sciences' => [
-            'journal_ids' => [4, 5, 6],  // Replace with your journal IDs
-            'description' => 'Journals covering social sciences and humanities'
-        ],
-        // Add more categories as needed
-    ];
-    
-    return $categories;
-}
+2. Navigate to Administration > Site Settings > Plugins
+
+3. Find "Journal Categories" and click **Settings**
+
+4. Enter your categories in the textarea, one per line, using this format:
 ```
+Category Name | id1, id2, id3 | Optional description
+```
+
+For example:
+```
+Science & Technology | 1, 2, 3 | Journals focused on scientific research and technology.
+Social Sciences | 4, 5, 6 | Journals covering social sciences and humanities.
+```
+
+Journal IDs are the numeric IDs from your OJS database. Any journals not assigned to a category will appear in an "Other Journals" section at the bottom of the page. Lines starting with `#` are ignored and can be used as comments.
 
 ## File Structure
 
-```
 JournalCategories/
 ├── JournalCategoriesPlugin.php         # Main plugin class
+├── JournalCategoriesSettingsForm.php   # Settings form handler
 ├── version.xml                         # Plugin version info
 ├── styles/
 │   └── journal_category.css            # Compiled CSS (loaded by default)
 ├── templates/
-│   └── indexSite.tpl                   # Custom homepage template
+│   ├── indexSite.tpl                   # Custom homepage template
+│   └── settingsForm.tpl                # Settings form template
 └── README.md                           # This file
-```
 
 ## License
 
