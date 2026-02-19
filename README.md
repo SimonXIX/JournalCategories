@@ -10,7 +10,7 @@ This plugin, designed and configured for Edinburgh Diamond, organises journals o
 
 ## Requirements
 
-- **OJS version:** 3.4.x (tested on 3.4.0-7)
+- **OJS version:** 3.4.x (tested on 3.4.0-6 and 3.4.0-7)
 
 ## Installation
 
