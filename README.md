@@ -52,6 +52,7 @@ Journal IDs are the numeric IDs from your OJS database. Any journals not assigne
 
 ## File Structure
 
+```
 JournalCategories/
 ├── JournalCategoriesPlugin.php         # Main plugin class
 ├── JournalCategoriesSettingsForm.php   # Settings form handler
@@ -62,6 +63,7 @@ JournalCategories/
 │   ├── indexSite.tpl                   # Custom homepage template
 │   └── settingsForm.tpl                # Settings form template
 └── README.md                           # This file
+```
 
 ## License
 
