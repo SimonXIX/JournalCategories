@@ -63,6 +63,11 @@ class JournalCategoriesPlugin extends GenericPlugin
      */
     public function getActions($request, $verb)
     {
+        // Only show settings at the site level, not within individual journal contexts
+        if ($request->getContext()) {
+            return parent::getActions($request, $verb);
+        }
+
         $router = $request->getRouter();
         return array_merge(
             $this->getEnabled() ? [
