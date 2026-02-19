@@ -14,6 +14,20 @@ This plugin, designed and configured for Edinburgh Diamond, organises journals o
 
 ## Installation
 
+1. Download the .zip release file.
+
+2. Log in to OJS as an administrator
+
+3. Navigate to Administration > Site Settings > Plugins
+
+4. Click on **Upload A New Plugin** and upload the .zip file.
+
+5. Find "Journal Categories" in the list
+
+6. Click the checkbox to enable the plugin
+
+OR 
+
 1. Copy the entire `JournalCategories` folder to your OJS installation:
    ```
    OJS-WEB-PATH/plugins/generic/JournalCategories/
